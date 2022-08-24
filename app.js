@@ -939,7 +939,7 @@ function verificarDerrota(){
            }, 50);
 }
 
-//verificarDerrota();
+verificarDerrota();
 
  
 
