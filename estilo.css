@@ -715,9 +715,9 @@
       #pag2 p{font-size: 11px;}
 
       #linha{left: 20px; width: 5px;}
-      #controles{left: 30px; padding: 0px; bottom: 15px; display: flex; flex-direction: column;}
-      #subir{font-size: 25px; margin: 5px;}
-      #descer{font-size: 25px; margin: 5px;}
+      #controles{left: 30px; padding: 0px; bottom: 5px; display: flex; flex-direction: column;}
+      #subir{font-size: 35px; margin: 5px;}
+      #descer{font-size: 35px; margin: 5px;}
       #atirar{width: 40px; left: 80%; bottom: 15px;}
       #ajuda{width: 70px; left: 35%;}
       #btnAjuda{left: 55%;}
