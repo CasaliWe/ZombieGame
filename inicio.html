@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+
+    <title>Zombie GAME</title>
+</head>
+<body onload="inicio()">
+    
+
+     <div id="container">
+                  
+               <div id="pagInicioContainer">
+                       <div id="pag1">
+                              <h3 id="nomeJogadorInicio"></h3>
+                              <p id="posJogadorInicio"></p>
+                              <img src="img/perso.gif" id="selectPerso">
+                              <br>
+                              <button id="btnMudarPerso">Mudar personagem</button>
+                              <br>
+                              <button id="btnInicarJogo">Iniciar</button>
+                       </div>
+
+                       <div id="pag2">
+                            <h1>Pontuação geral</h1>
+                       </div>
+
+                       <button id="sairDaConta" onclick="sairDaConta()">SAIR</button>
+               </div>
+
+           
+
+               <footer id="footerIndex">Copyright © 2022 Weslei Casali</footer>
+     </div>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

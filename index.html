@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+
+    <title>Zombie GAME</title>
+</head>
+<body onload="index()">
+    
+
+     <div id="container">
+                  
+                <h1 id="title">Invasão Zombie</h1>
+
+                <div id="containerLogin">
+                      <input type="text" placeholder="User" id="user">
+                      <input type="password" placeholder="Password" id="password">
+                      <button onclick="logar()">Logar</button>
+                </div>
+
+                <div id="containerCriarConta">
+                        <span>Crie sua conta <i class="fas fa-arrow-right"></i></span>
+                        <button onclick="criarConta()">Criar conta</button>
+                </div>
+               
+                <div id="tabelaMelhores">
+                    
+                </div>
+
+
+                <div id="blocoCriarConta">
+                    <div>
+                        <input type="text" placeholder="Seu user" id="criaUser">
+                        <input type="password" placeholder="Sua senha" id="criaSenha">
+                        <button onclick="contaCriada()">Criar conta</button>
+                        <span style="margin-top: 20px; cursor:pointer;" onclick="fechaAba()">X</span>
+                    </div>
+                </div>
+           
+
+               <footer id="footerIndex">Copyright © 2022 Weslei Casali</footer>
+     </div>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

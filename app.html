@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+
+    <title>Zombie GAME</title>
+</head>
+<body onload="regress()">
+    
+
+     <div id="container">
+           <div id="palco">
+                 <img src="img/perso.gif" id="personagem">
+                 <img src="img/goku.gif" id="goku">
+                 <img src="img/goku.gif" id="goku1">
+           </div>   
+
+           <div id="controles">
+               <i class="fas fa-arrow-alt-circle-up controles" onclick="subir()" id="subir"></i>
+               <i class="fas fa-arrow-alt-circle-down controles" onclick="descer()" id="descer"></i>
+           </div>
+           
+           <img src="img/revolver.png" id="atirar" onclick="atirar()">
+
+           <div id="linha"></div>
+
+           <div id="vida">
+                  <div id="diminuiVida"></div>
+           </div>
+
+           <div id="ajuda">
+                 <div id="pontosAjuda"></div>
+           </div>
+
+           <div id="btnAjuda">
+                   <button onclick="chamarAjuda()" id="chamarAjuda">AJUDA</button>
+           </div>
+
+           <div id="tempoAjuda">10</div>
+
+           <div id="kills"></div>
+
+           <div id="killsTotal"></div>
+
+           <div id="avisoKills"></div>
+
+           <div id="nomeNoJogo"></div>
+
+           <div id="btnSair">
+                 <button onclick="sairDoJogo()">Sair</button>
+           </div>
+
+           <div id="regress"></div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
