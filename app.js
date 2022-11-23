@@ -452,8 +452,7 @@ function atirar(){
 
          tempoTiro++
          if(tempoTiro == 1){
-         
-         
+        
                 
          document.getElementById('atirar').style.cssText = ` transform: rotate(-30deg);`
          setTimeout(() => {
@@ -516,6 +515,8 @@ function atirar(){
          var zombies2 = document.querySelectorAll('.animaZombie2')
          var novaVidaTiro = document.querySelectorAll('.animaVida')
          var kills = 0
+
+         //ZOMBIE 0 -------------------------------------------------------
          zombies0.forEach((valor)=>{
                 if(valor.offsetTop == posicao){
                         setTimeout(() => {
@@ -530,9 +531,26 @@ function atirar(){
                         setTimeout(() => {
                             valor.remove()
                         }, 1000);
-                }
+                } 
+
+                if(valor.offsetTop - posicao == -30){
+                    setTimeout(() => {
+                        valor.src = 'img/sangue.png'
+                        aoo.play()
+                        kills = kills +1
+                        attTotalKills();
+                        bala.remove()
+                        ajuda();
+                    }, 500);
+
+                    setTimeout(() => {
+                        valor.remove()
+                    }, 1000);
+                } 
+
          })
 
+         //ZOMBIE 1 -------------------------------------------------------
          zombies1.forEach((valor)=>{
               if(valor.offsetTop == posicao){
                     setTimeout(() => {
@@ -547,9 +565,26 @@ function atirar(){
                     setTimeout(() => {
                         valor.remove()
                     }, 1000);
-              }
+              } 
+
+              if(valor.offsetTop - posicao == -30){
+                    setTimeout(() => {
+                       valor.src = 'img/sangue.png'
+                       aoo.play()
+                       kills = kills +1
+                       attTotalKills();
+                       bala.remove()
+                       ajuda();
+                    }, 500);
+ 
+                       setTimeout(() => {
+                       valor.remove()
+                    }, 1000);
+              } 
+
          })
 
+         //ZOMBIE 2 -------------------------------------------------------
          zombies2.forEach((valor)=>{
               if(valor.offsetTop == posicao){
                     setTimeout(() => {
@@ -564,9 +599,26 @@ function atirar(){
                     setTimeout(() => {
                         valor.remove()
                     }, 1000);
-              }
+              } 
+
+              if(valor.offsetTop - posicao == -30){
+                    setTimeout(() => {
+                        valor.src = 'img/sangue.png'
+                        aoo.play()
+                        kills = kills +1
+                        attTotalKills();
+                        bala.remove()
+                        ajuda();
+                    }, 500);
+
+                    setTimeout(() => {
+                       valor.remove()
+                    }, 1000);
+              } 
+
          })
 
+        //VIDA EXTRA -------------------------------------------------------
          novaVidaTiro.forEach((valor)=>{
              if(valor.offsetTop == posicao){
                     setTimeout(() => {

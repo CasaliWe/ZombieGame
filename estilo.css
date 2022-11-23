@@ -332,6 +332,12 @@
 }
 
 
+/*-------------------------AVISO MOBILE---------------------*/
+#avisoMobile{
+       display: none;
+}
+
+
 
 
 
@@ -689,4 +695,24 @@
        #kills{font-size: 25px;}
        #killsTotal{right: 10%;}
        #avisoKills{font-size: 25px;}
+}
+
+
+
+
+
+@media (max-width: 800px) {
+       #containerLogin{display: none;}
+       #containerCriarConta{display: none;}
+       #avisoMobile{
+              display: block;
+              padding: 15px;
+              font-size: 25px;
+              color: white;
+              font-weight: bold;
+              width: 350px;
+              position: absolute;
+              top: 140px;
+              text-align: center;
+       }
 }
