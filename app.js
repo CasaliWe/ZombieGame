@@ -409,6 +409,16 @@ function sairDaConta(){
     window.location.href = 'index.html'
 }
 
+//BTN PARA ABRIR ABA DE COMO JOGAR
+function comoJogar(){
+      document.getElementById('abaComoJogar').style.cssText = `height: 550px; transition: all 500ms;`
+}
+
+//BTN PARA FECHAR ABA COMO JOGAR
+function fecharAbaComoJogar(){
+        document.getElementById('abaComoJogar').style.cssText = `height: 0px; transition: all 500ms;`
+}
+
 
 
 

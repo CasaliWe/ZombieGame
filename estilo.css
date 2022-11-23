@@ -596,6 +596,23 @@
        transition: all 1s;
 }
 
+
+#comoJogar{
+       position: absolute;
+       bottom: 50px;
+       width: 100%;
+       background-color: transparent;
+       border: 1px solid transparent;
+       color: greenyellow;
+       cursor: pointer;
+}
+
+#comoJogar:hover{
+       color: white;
+       transition: all 400ms;
+}
+
+
 #sairDaConta{
          position: absolute;
          bottom: 20px;
@@ -631,6 +648,51 @@
        padding: 5px;
        border-radius: 10px;
        border-bottom: 1px solid black;
+}
+
+
+
+
+/*---------------------- ABA COMO JOGAR -------------------*/
+#abaComoJogar{
+         background-color: rgba(0, 0, 0, 0.863);
+         position: fixed;
+         width: 70%;
+         height: 0px;
+         top: 0px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         transition: 500ms;
+         overflow: hidden;
+         border-radius: 10px;
+}
+
+#abaComoJogar h1{
+         margin: 10px;
+         color: greenyellow;
+}
+
+#abaComoJogar p{
+       width: 50%;
+       margin: 10px;
+       font-size: 18px;
+       text-align: center;
+}
+
+#abaComoJogar p i{
+       color: greenyellow;
+}
+
+#abaComoJogar button{
+      color: red;
+      font-size: 25px;
+      font-weight: bold;
+      margin: 25px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      background-color: transparent;
 }
 
 
